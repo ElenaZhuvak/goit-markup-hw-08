@@ -1,0 +1,27 @@
+@keyframes animate-modal-form__btn {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes changeBgColor {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+
+  50% {
+    background-color: rgb(194, 218, 247);
+  }
+
+  100% {
+    background-color: rgb(199, 243, 241);
+  }
+}
