@@ -1,7 +1,7 @@
 .network-address {
-  margin-right: 100px;
-  padding-top: 72px;
-  padding-bottom: 100px;
+  @include mq(desktop) {
+    margin-right: 100px;
+  }
 
   &__slogan {
     margin-bottom: 20px;
@@ -11,6 +11,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 
     color: #ffffff;
   }

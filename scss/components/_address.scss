@@ -1,7 +1,15 @@
 .footer__address {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-right: 70px;
+  @include mq(not-desktop) {
+    margin-bottom: 60px;
+  }
+
+  @include mq(tablet) {
+    margin-right: 165px;
+  }
+
+  @include mq(desktop) {
+    margin-right: 70px;
+  }
 }
 
 .address {
@@ -14,6 +22,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    text-align: center;
 
     color: #ffffff;
   }
