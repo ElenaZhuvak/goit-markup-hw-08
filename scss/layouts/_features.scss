@@ -11,7 +11,11 @@
 }
 .features__item {
   @include mq(desktop) {
-    width: 270px;
+    align-content: center;
+    justify-content: center;
+    &:not(:first-child) {
+      margin-left: var(--card-set-gap);
+    }
   }
 
   @include mq(mobile-only) {

@@ -1,6 +1,6 @@
 .network-address {
   @include mq(desktop) {
-    margin-right: 100px;
+    margin-right: 93px;
   }
 
   &__slogan {
@@ -14,10 +14,19 @@
     text-align: center;
 
     color: #ffffff;
+
+    @include mq(desktop) {
+      text-align: start;
+    }
   }
+
   &__list {
     display: flex;
+    @include mq(not-desktop) {
+      justify-content: center;
+    }
   }
+
   &__item:not(:last-child) {
     margin-right: 10px;
   }

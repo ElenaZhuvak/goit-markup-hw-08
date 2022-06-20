@@ -5,16 +5,6 @@
   justify-content: center;
 }
 
-// .cleint__list .client__item + .client__item {
-//   @include mq(desktop) {
-//     margin-left: var(--card-set-gap);
-//   }
-//   @include mq(mobile-only) {
-//     &:nth-child(2n) {
-//       margin-left: var(--card-set-gap);
-//     }
-//   }
-// }
 .client__item {
   @include mq(desktop) {
     width: 170px;
@@ -50,7 +40,6 @@
   justify-content: center;
   align-items: center;
 
-  // width: 170px;
   height: 92px;
 
   cursor: pointer;

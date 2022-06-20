@@ -33,15 +33,33 @@
 
 .buttons-filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  height: 54px;
+  // height: 54px;
   align-items: flex-start;
-  margin-bottom: 34px;
+  // margin-bottom: 34px;
+
+  @include mq(mobile-only) {
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  @include mq(tablet) {
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
 }
+
 .buttons-filter__item {
   height: 38px;
   min-width: 73px;
-}
-.buttons-filter .buttons-filter__item + .buttons-filter__item {
-  margin-left: 8px;
+
+  @include mq(mobile-only) {
+    margin-bottom: 15px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }

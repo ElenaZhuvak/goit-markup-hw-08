@@ -8,7 +8,12 @@
   color: var(--accent-color);
 
   &__header {
-    margin-right: 90px;
+    @include mq(tablet) {
+      margin-right: 88px;
+    }
+    @include mq(desktop) {
+      margin-right: 93px;
+    }
   }
   &__title {
     font-family: 'Raleway';

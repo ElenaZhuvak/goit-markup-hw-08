@@ -1,3 +1,9 @@
+.navigation {
+  @include mq(mobile-only) {
+    display: none;
+  }
+}
+
 .navigation__list {
   display: flex;
   align-items: center;

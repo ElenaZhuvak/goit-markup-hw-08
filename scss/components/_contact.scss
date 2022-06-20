@@ -1,18 +1,30 @@
 .contact__list {
   display: flex;
   align-items: center;
-  margin-left: 295px;
+  margin-left: auto;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  @include mq(tablet-only) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
-.contact__list .contact__item + .contact__item {
-  margin-left: 50px;
+
+.contact__item {
+  @include mq(desktop) {
+    &:last-child {
+      margin-left: 50px;
+    }
+  }
 }
 
 .contact__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -30,6 +42,16 @@
   &:hover .contact__icon,
   &:focus .contact__icon {
     fill: var(--accent-color);
+  }
+
+  @include mq(tablet) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
