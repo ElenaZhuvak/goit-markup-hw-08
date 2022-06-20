@@ -59,23 +59,28 @@
                     </a>
                 </li>
             </ul>
-        </div> 
+        </div>
+
+        <button class="burger-menu__open-btn js-open-menu btn" type="button">
+            <svg class="burger-menu__open-icon" width="40" height="40">
+                <use href="./img-studio/icons/burger-sprite.svg#icon-burger-menu"></use>
+            </svg>
+        </button>
     </header>
 
     <main>
     <!-- Секция Герой -->
-<!-- 
         <section class="hero overlay">                                                                              
             <div class="container">     
                 <div class="hero__page">
                     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                     <button class="button hero__button" type="button" data-modal-open>Заказать услугу</button>
                 </div>
-            </div> -->
+            </div>
 
             <!-- Модальное окно -->
             
-            <!-- <div class="backdrop is-hidden" data-modal>
+             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
             
                     <button class="modal-btn" data-modal-close>
@@ -87,7 +92,7 @@
                     <form class="modal-form">
                         <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b> -->
                         <!-- Данные клиента -->
-                        <!-- <div class="modal-wrapper">
+                        <div class="modal-wrapper">
                             <label class="modal-form__group">
                                 <span class="modal-form__label">Имя</span>
                                 <input class="modal-form__input" type="main-task__text" name="user-name" minlength="3" placeholder=" "
@@ -117,9 +122,9 @@
                                 <span class="modal-form__label">Комментарий</span>
                                 <textarea class="modal-form__message" name="comment" rows=" " placeholder="Введите текст"></textarea>
                             </label>
-                        </div> -->
+                        </div>
                         <!-- Чекбокс -->
-                        <!-- <label class="modal-policy__group">
+                        <label class="modal-policy__group">
                             <input class="checkbox visually-hidden" type="checkbox" name="mark" tabindex="-1"/>
                             <span class="custom-checkbox" tabindex="0" role="checkbox">
                                 <svg class="custom-checkbox__icon" width="16" height="15">
@@ -530,8 +535,65 @@
         </div>
     </footer>
 
+<!-- Бургер меню -->
+
+<section class="burger-menu js-menu-container">
+    <div class="burger-menu__backdrop ">
+        <div class="burger-menu__wrapper container ">
+            <button class="burger-menu__close-btn js-close-menu btn">
+                <svg class="burger-menu__close-icon" width="40" height="40">
+                    <use href="./img-studio/icons/burger-sprite.svg#icon-close-burger"></use>
+                </svg>
+            </button>
+            <nav class="burger-menu__nav">
+                <ul class="list burger-menu__nav-list">
+                    <li class="burger-menu__nav-item burger-menu__nav-item--active"><a
+                            class="burger-menu__nav-link burger-menu__nav-link--active" href="./index.html">Студия</a>
+                    </li>
+                    <li class="burger-menu__nav-item"><a class="burger-menu__nav-link"
+                            href="./portfolio.html">Портфолио</a></li>
+                    <li class="burger-menu__nav-item"><a class="burger-menu__nav-link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu__contact">
+                <ul class="list burger-menu__contact-list">
+                    <li class="burger-menu__contact-item">
+                        <a class="burger-menu__contact-phone" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+
+                    <li class="burger-menu__contact-item">
+                        <a class="burger-menu__contact-email" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="burger-menu__social">
+                <ul class="list burger-menu__social-list">
+                    <li class="burger-menu__social-item">
+                        <a class="burger-menu__social-link" href="">Instagram</a>
+                    </li>
+                    <li class="burger-menu__social-item">
+                        <a class="burger-menu__social-link" href="">Twitter</a>
+                    </li>
+                    <li class="burger-menu__social-item">
+                        <a class="burger-menu__social-link" href="">Facebook</a>
+                    </li>
+                    <li class="burger-menu__social-item">
+                        <a class="burger-menu__social-link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 
 <script src="./js/modal.js"></script>
+<script src="./js/burger-menu.js"></script>
 </body>
 </html>
