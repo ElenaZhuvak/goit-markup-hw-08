@@ -387,7 +387,7 @@ body {
   position: fixed;
   opacity: 0;
   visibility: hidden;
-  cursor: pointer;
+  pointer-events: none;
   top: 0;
   left: 0;
   -webkit-transform: translateX(-100vw);
@@ -1243,6 +1243,8 @@ body.menu-open {
 
 .hero__button {
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-animation: animate-modal-form__btn 3000ms infinite 1000ms;
           animation: animate-modal-form__btn 3000ms infinite 1000ms;
 }

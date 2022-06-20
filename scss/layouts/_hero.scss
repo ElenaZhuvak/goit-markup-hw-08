@@ -47,6 +47,9 @@
   &__button {
     margin-top: 30px;
 
+    margin-left: auto;
+    margin-right: auto;
+
     animation: animate-modal-form__btn 3000ms infinite 1000ms;
   }
 }
