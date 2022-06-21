@@ -41,7 +41,7 @@
                 <li class="contact__item">
                     <a class="contact__link" href="mailto:info@devstudio.com">
                         <svg class="contact__icon" width="16" height="12">
-                            <use href="./img-studio/sprite-main.svg#mail">
+                            <use href="./img/sprite-main.svg#mail">
                             </use>
                         </svg>
                         info@devstudio.com
@@ -51,7 +51,7 @@
                 <li class="contact__item">
                     <a class="contact__link" href="tel:+380961111111">
                         <svg class="contact__icon" width="10" height="16">
-                            <use href="./img-studio/sprite-main.svg#phone">
+                            <use href="./img/sprite-main.svg#phone">
                             </use>
                         </svg>
                         +38 096 111 11 11
@@ -93,7 +93,21 @@
                     <li class="portfolio-gallery__item">
                         <a class="portfolio-gallery__link" href="">
                             <div class="portfolio-gallery__card">
-                                <img src="./img-portfolio/img-1.jpeg" alt="Веб-сайт" width="370">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./img/desktop/img-portfolio/img-1.jpeg 1x,
+                                        ./img/desktop/img-portfolio/img-1@2x.jpeg 2x" type="image/jpeg">
+                                
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./img/tablet/img-portfolio/img-1.jpeg 1x,
+                                        ./img/tablet/img-portfolio/img-1@2x.jpeg 2x" type="image/jpeg">
+                                
+                                    <source media="(max-width: 767px)" srcset="
+                                        ./img/mobile/img-portfolio/img-1.jpeg 1x,
+                                        ./img/mobile/img-portfolio/img-1@2x.jpeg 2x" type="image/jpeg">
+                                    <img src="./img/desktop/img-portfolio/img-1.jpeg" alt="Дизайн" width="370">
+                                </picture>
                                 <p class="portfolio-gallery__text-transform">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
 
@@ -107,12 +121,28 @@
                     <li class="portfolio-gallery__item">
                         <a class="portfolio-gallery__link" href="">
                             <div class="portfolio-gallery__card">
-                                <img src="./img-portfolio/img-2.jpeg" alt="Дизайн" width="370">
+                                
+
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                    ./img/desktop/img-portfolio/img-2.jpeg 1x,
+                                    ./img/desktop/img-portfolio/img-2@2x.jpeg 2x"
+                                    type="image/jpeg">
+
+                                    <source media="(min-width: 768px)" srcset="
+                                    ./img/tablet/img-portfolio/img-2.jpeg 1x,
+                                    ./img/tablet/img-portfolio/img-2@2x.jpeg 2x" type="image/jpeg">
+
+                                    <source media="(max-width: 767px)" srcset="
+                                    ./img/mobile/img-portfolio/img-2.jpeg 1x,
+                                    ./img/mobile/img-portfolio/img-2@2x.jpeg 2x" type="image/jpeg">
+                                    <img src="./img/desktop/img-portfolio/img-2.jpeg" alt="Дизайн" width="370">
+                                </picture>
                                 <p class="portfolio-gallery__text-transform">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                                 <div class="portfolio-gallery__discription">
-                                    <h3 class="portfolio-gallery__title">Постер New Orlean vs Golden Star</h3>
+                                <h3 class="portfolio-gallery__title">Постер New Orlean vs Golden Star</h3>
                                     <p class="portfolio-gallery__text">Дизайн</p>
                                 </div>
                         </a>
@@ -121,7 +151,7 @@
                     <li class="portfolio-gallery__item">
                         <a class="portfolio-gallery__link" href="">
                             <div class="portfolio-gallery__card">
-                                <img src="./img-portfolio/img-3.jpeg" alt="Приложение" width="370">
+                                <img src="./img/desktop/img-portfolio/img-3.jpeg" alt="Приложение" width="370">
                                 <p class="portfolio-gallery__text-transform">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -135,7 +165,7 @@
                     <li class="portfolio-gallery__item">
                         <a class="portfolio-gallery__link" href="">
                             <div class="portfolio-gallery__card">
-                                <img src="./img-portfolio/img-4.jpeg" alt="Маркетинг" width="370">
+                                <img src="./img/desktop/img-portfolio/img-4.jpeg" alt="Маркетинг" width="370">
                                 <p class="portfolio-gallery__text-transform">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                                 <div class="portfolio-gallery__discription">
@@ -148,7 +178,7 @@
                     <li class="portfolio-gallery__item">
                         <a class="portfolio-gallery__link" href="">
                             <div class="portfolio-gallery__card">
-                                    <img src="./img-portfolio/img-5.jpeg" alt="Приложение" width="370">
+                                    <img src="./img/desktop/img-portfolio/img-5.jpeg" alt="Приложение" width="370">
                                     <p class="portfolio-gallery__text-transform">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                                 <div class="portfolio-gallery__discription">
@@ -161,7 +191,7 @@
                     <li class="portfolio-gallery__item">
                         <a class="portfolio-gallery__link" href="">
                             <div class="portfolio-gallery__card">
-                                <img src="./img-portfolio/img-6.jpeg" alt="Веб-сайт" width="370">
+                                <img src="./img/desktop/img-portfolio/img-6.jpeg" alt="Веб-сайт" width="370">
                                 <p class="portfolio-gallery__text-transform">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                                 <div class="portfolio-gallery__discription">
@@ -174,7 +204,7 @@
                     <li class="portfolio-gallery__item">
                         <a class="portfolio-gallery__link" href="">
                             <div class="portfolio-gallery__card">
-                                <img src="./img-portfolio/img-7.jpeg" alt="Дизайн" width="370">
+                                <img src="./img/desktop/img-portfolio/img-7.jpeg" alt="Дизайн" width="370">
                                 <p class="portfolio-gallery__text-transform">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                                 <div class="portfolio-gallery__discription">
@@ -187,7 +217,7 @@
                     <li class="portfolio-gallery__item">
                         <a class="portfolio-gallery__link" href="">
                             <div class="portfolio-gallery__card">
-                                <img src="./img-portfolio/img-8.jpeg" alt="Маркетинг" width="370">
+                                <img src="./img/desktop/img-portfolio/img-8.jpeg" alt="Маркетинг" width="370">
                                 <p class="portfolio-gallery__text-transform">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                                 <div class="portfolio-gallery__discription">
@@ -200,7 +230,7 @@
                     <li class="portfolio-gallery__item">
                         <a class="portfolio-gallery__link" href="">
                             <div class="portfolio-gallery__card">
-                                <img src="./img-portfolio/img-9.jpeg" alt="Приложение" width="370">
+                                <img src="./img/desktop/img-portfolio/img-9.jpeg" alt="Приложение" width="370">
                                 <p class="portfolio-gallery__text-transform">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                                 <div class="portfolio-gallery__discription">
@@ -237,7 +267,7 @@
                     <li class="network-address__item">
                         <a class="network-address__link" href="" aria-label="instagram">
                             <svg class="network-address__icon" width="20" height="20">
-                                <use href="./img-studio/sprite-main.svg#instagram"></use>
+                                <use href="./img/sprite-main.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
@@ -245,7 +275,7 @@
                     <li class="network-address__item">
                         <a class="network-address__link" href="" aria-label="twitter">
                             <svg class="network-address__icon" width="20" height="20">
-                                <use href="./img-studio/sprite-main.svg#twitter"></use>
+                                <use href="./img/sprite-main.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
@@ -253,7 +283,7 @@
                     <li class="network-address__item">
                         <a class="network-address__link" href="" aria-label="facebook">
                             <svg class="network-address__icon" width="20" height="20">
-                                <use href="./img-studio/sprite-main.svg#facebook"></use>
+                                <use href="./img/sprite-main.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
@@ -261,7 +291,7 @@
                     <li class="network-address__item">
                         <a class="network-address__link" href="" aria-label="linkedin">
                             <svg class="network-address__icon" width="20" height="20">
-                                <use href="./img-studio/sprite-main.svg#linkedin"></use>
+                                <use href="./img/sprite-main.svg#linkedin"></use>
                             </svg>
                         </a>
                     </li>
@@ -274,7 +304,7 @@
                     <input class="footer-form__input" type="email" name="email" id="email" placeholder="E-mail">
                     <button class="button footer-form__btn-subscribe" type="submit">Подписаться
                         <svg class="footer-form__icon" width="24" height="24">
-                            <use href="./img-studio/sprite-modal.svg#icon-send"></use>
+                            <use href="./img/sprite-modal.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>

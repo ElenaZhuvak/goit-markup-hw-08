@@ -562,10 +562,10 @@ body.menu-open {
 
 .overlay {
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img-studio/header.jpeg);
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img-studio/header.jpeg);
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img-studio/header.jpeg);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img-studio/header.jpeg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/desktop/img-studio/header.jpeg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/desktop/img-studio/header.jpeg);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/desktop/img-studio/header.jpeg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/desktop/img-studio/header.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -664,6 +664,14 @@ body.menu-open {
 
 .modal-wrapper {
   margin-bottom: 20px;
+  width: 450px;
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-wrapper {
+    width: 528px;
+  }
 }
 
 .modal-wrapper.modal-form__group + .modal-form__group {

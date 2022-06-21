@@ -1,5 +1,11 @@
 .modal-wrapper {
   margin-bottom: 20px;
+  width: 450px;
+  overflow-y: auto;
+
+  @include mq(desktop) {
+    width: 528px;
+  }
 
   &.modal-form__group + .modal-form__group {
     margin-top: 10px;
