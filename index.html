@@ -135,9 +135,11 @@
                                     <use href="./img/sprite-modal.svg#icon-vector"></use>
                                 </svg>
                             </span>
-                            <span class="modal-policy__desc">Соглашаюсь с рассылкой и принимаю 
-                                <a class="modal-policy__link" href=""> Условия договора</a>
-                            </span>
+                            <p class="modal-policy__desc">
+                                Соглашаюсь с рассылкой и принимаю
+                                <span><a class="modal-policy__link" href=""> Условия договора</a></span>
+                            </p>
+
                         </label>
                         <button class="button modal-form__btn" type="submit">Отправить</button>
                     </form>
@@ -216,20 +218,50 @@
         <div class="container">
             <h2 class="title">Чем мы занимаемся</h2>
             <ul class="main-task__list">
+
+                <!-- === Box-1 === -->
                 <li class="main-task__item">
-                    <img src="./img/desktop/img-studio/box1.jpeg" alt="Разработка сайтов" width="370">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                        ./img/desktop/img-studio/img-s1.jpeg 1x,
+                        ./img/desktop/img-studio/img-s1@2x.jpeg 2x"
+                        type="image/jpeg">
+                        <img src="./img/desktop/img-studio/box1.jpeg" alt="Разработка сайтов" width="370">
+                    </picture>
+                    
                     <div class="main-task__box">
                         <p class="main-task__text">Десктопные приложения</p>
                     </div>
                 </li>
+
+                <!-- === Box-2 === -->
                 <li class="main-task__item">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                        ./img/desktop/img-studio/img-s2.jpeg 1x,
+                        ./img/desktop/img-studio/img-s2@2x.jpeg 2x" 
+                        type="image/jpeg">
                     <img src="./img/desktop/img-studio/box2.jpeg" alt="Техническая поддержка" width="370">
+                    </picture>
+                    
                     <div class="main-task__box">
                         <p class="main-task__text">Мобильные приложения</p>
                     </div>
                 </li>
+
+                <!-- === Box-3 === -->
                 <li class="main-task__item">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                        ./img/desktop/img-studio/img-s3.jpeg 1x,
+                        ./img/desktop/img-studio/img-s3@2x.jpeg 2x" 
+                        type="image/jpeg">
                     <img src="./img/desktop/img-studio/box3.jpeg" alt="Дизайнерское офорление" width="370">
+                    </picture>
+                    
                     <div class="main-task__box">
                         <p class="main-task__text">Дизайнерские решения</p>
                     </div>
@@ -244,8 +276,29 @@
         <h2 class="title">Наша команда</h2>
     
             <ul class="team__list">
+
+                <!-- === Memeber-1 === -->
                 <li class="member">
-                    <img class="member__img" src="./img/desktop/img-studio/igor-dem.jpeg" alt="Фото Игоря Демьяненко" width="270">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                        ./img/desktop/img-studio/img-igor.jpeg 1x,
+                        ./img/desktop/img-studio/img-igor@2x.jpeg 2x,
+                        ./img/desktop/img-studio/img-igor@3x.jpeg 3x" 
+                        type="image/jpeg">
+                        
+                        <source media="(min-width: 768px)" srcset="
+                        ./img/tablet/img-studio/img-igor.jpeg 1x,
+                        ./img/tablet/img-studio/img-igor@2x.jpeg 2x" 
+                        type="image/jpeg">
+                        
+                        <source media="(max-width: 767px)" srcset="
+                        ./img/mobile/img-studio/img-igor.jpeg 1x,
+                        ./img/mobile/img-studio/img-igor@2x.jpeg 2x" 
+                        type="image/jpeg">
+                        <img class="member__img" src="./img/desktop/img-studio/igor-dem.jpeg" alt="Фото Игоря Демьяненко" width="270">
+                    </picture>
+                    
                     <div class="member__discription">
                         <h3 class="member__name">Игорь Демьяненко</h3>
                         <p class="member__text">Product Designer</p>
@@ -284,9 +337,29 @@
                     </ul>
                     </div>
                 </li>
-                
+
+                <!-- === Memeber-2 === -->
                 <li class="member">
-                    <img class="member__img" src="./img/desktop/img-studio/olga-repina.jpeg" alt="Фото Ольги Репиной" width="270">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                        ./img/desktop/img-studio/img-olga.jpeg 1x,
+                        ./img/desktop/img-studio/img-olga@2x.jpeg 2x,
+                        ./img/desktop/img-studio/img-olga@3x.jpeg 3x" 
+                        type="image/jpeg">
+                        
+                        <source media="(min-width: 768px)" srcset="
+                        ./img/tablet/img-studio/img-olga.jpeg 1x,
+                        ./img/tablet/img-studio/img-olga@2x.jpeg 2x" 
+                        type="image/jpeg">
+                        
+                        <source media="(max-width: 767px)" srcset="
+                        ./img/mobile/img-studio/img-olga.jpeg 1x,
+                        ./img/mobile/img-studio/img-olga@2x.jpeg 2x" 
+                        type="image/jpeg">
+                        <img class="member__img" src="./img/desktop/img-studio/olga-repina.jpeg" alt="Фото Ольги Репиной" width="270">
+                    </picture>
+
                     <div class="member__discription">
                         <h3 class="member__name">Ольга Репина</h3>
                         <p class="member__text">Frontend Developer</p>
@@ -326,8 +399,28 @@
                     </div>
                 </li>
                 
+                <!-- === Memeber-3 === -->
                 <li class="member">
-                    <img class="member__img" src="./img/desktop/img-studio/nikolay-tarasov.jpeg" alt="Фото Николая Тарасова" width="270">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                        ./img/desktop/img-studio/img-nik.jpeg 1x,
+                        ./img/desktop/img-studio/img-nik@2x.jpeg 2x,
+                        ./img/desktop/img-studio/img-nik@3x.jpeg 3x" 
+                        type="image/jpeg">
+                        
+                        <source media="(min-width: 768px)" srcset="
+                        ./img/tablet/img-studio/img-nik.jpeg 1x,
+                        ./img/tablet/img-studio/img-nik@2x.jpeg 2x" 
+                        type="image/jpeg">
+                        
+                        <source media="(max-width: 767px)" srcset="
+                        ./img/mobile/img-studio/img-nik.jpeg 1x,
+                        ./img/mobile/img-studio/img-nik@2x.jpeg 2x" 
+                        type="image/jpeg">
+                        <img class="member__img" src="./img/desktop/img-studio/nikolay-tarasov.jpeg" alt="Фото Николая Тарасова" width="270">
+                    </picture>
+                    
                     <div class="member__discription">
                         <h3 class="member__name">Николай Тарасов</h3>
                         <p class="member__text">Marketing</p>
@@ -367,8 +460,28 @@
                     </div>
                 </li>
                 
+                <!-- === Memeber-4 === -->
                 <li class="member">
-                    <img class="member__img" src="./img/desktop/img-studio/mikhail-ermakov.jpeg" alt="Фото Михаила Ермакова" width="270">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                        ./img/desktop/img-studio/img-mikh.jpeg 1x,
+                        ./img/desktop/img-studio/img-mikh@2x.jpeg 2x,
+                        ./img/desktop/img-studio/img-mikh@3x.jpeg 3x" 
+                        type="image/jpeg">
+                        
+                        <source media="(min-width: 768px)" srcset="
+                        ./img/tablet/img-studio/img-mikh.jpeg 1x,
+                        ./img/tablet/img-studio/img-mikh@2x.jpeg 2x" 
+                        type="image/jpeg">
+                        
+                        <source media="(max-width: 767px)" srcset="
+                        ./img/mobile/img-studio/img-mikh.jpeg 1x,
+                        ./img/mobile/img-studio/img-mikh@2x.jpeg 2x" 
+                        type="image/jpeg">
+                        <img class="member__img" src="./img/desktop/img-studio/mikhail-ermakov.jpeg" alt="Фото Михаила Ермакова" width="270">
+                    </picture>
+                    
                     <div class="member__discription">
                         <h3 class="member__name">Михаил Ермаков</h3>
                         <p class="member__text">UI Designer</p>
