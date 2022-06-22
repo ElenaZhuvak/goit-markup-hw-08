@@ -66,6 +66,10 @@
   text-transform: uppercase;
 
   color: var(--title-text-color);
+
+  @include mq(mobile-only) {
+    text-align: center;
+  }
 }
 
 .features__text {

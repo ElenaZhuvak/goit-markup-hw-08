@@ -1,22 +1,25 @@
-.modal-wrapper {
-  margin-bottom: 20px;
+.modal {
   width: 450px;
-  overflow-y: auto;
 
   @include mq(desktop) {
     width: 528px;
   }
-
-  &.modal-form__group + .modal-form__group {
-    margin-top: 10px;
-  }
+}
+.modal-wrapper {
+  margin-bottom: 20px;
+  overflow-y: auto;
 }
 
 .modal-form__group {
   display: block;
   position: relative;
   width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
+
 .modal-form__label {
   display: block;
   text-align: start;

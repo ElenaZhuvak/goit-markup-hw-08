@@ -68,6 +68,9 @@ body {
   color: var(--title-text-color);
 
   @include mq(not-desktop) {
+    font-size: 28px;
+    line-height: 1.18;
+
     margin-bottom: var(--card-set-gap);
   }
 }

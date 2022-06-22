@@ -40,7 +40,12 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  @include mq(not-desktop) {
+    font-size: 12px;
+  }
 }
+
 .modal-policy__link {
   text-decoration: underline;
   margin-left: 3px;
