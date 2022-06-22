@@ -6,38 +6,37 @@
   background-position: center;
   background-size: cover;
   background-color: rgba(47, 48, 58, 0.4);
+
+  // Для мобильной версии
+  @include mq(mobile) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/mobile/img-studio/img-hero.jpeg);
+
+    @include mq(retina2x) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/mobile/img-studio/img-hero@2x.jpeg);
+    }
+  }
+
+  // Для планшетной версии
+  @include mq(tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/tablet/img-studio/img-hero.jpeg);
+
+    @include mq(retina2x) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/mobile/img-studio/img-hero@2x.jpeg);
+    }
+  }
+
+  // Для десктопной версии
+  @include mq(desktop) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/desktop/img-studio/img-hero.jpeg);
+
+    @include mq(retina2x) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/desktop/img-studio/img-hero@2x.jpeg);
+    }
+  }
 }
-
-//   // Для мобильной версии
-//   @include mq(mobile) {
-//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//       url(../img/mobile/img-studio/img-hero.jpeg);
-
-//     @include mq(retina2x) {
-//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//         url(../img/mobile/img-studio/img-hero@2x.jpeg);
-//     }
-//   }
-
-//   // Для планшетной версии
-//   @include mq(tablet) {
-//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//       url(../img/tablet/img-studio/img-hero.jpeg);
-
-//     @include mq(retina2x) {
-//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//         url(../img/mobile/img-studio/img-hero@2x.jpeg);
-//     }
-//   }
-
-//   // Для десктопной версии
-//   @include mq(desktop) {
-//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//       url(../img/desktop/img-studio/img-hero.jpeg);
-
-//     @include mq(retina2x) {
-//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//         url(../img/desktop/img-studio/img-hero@2x.jpeg);
-//     }
-//   }
-// }

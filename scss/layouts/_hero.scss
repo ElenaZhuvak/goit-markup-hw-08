@@ -5,7 +5,7 @@
   padding: 118px 0;
   width: 100vw;
 
-  @include mq(decktop) {
+  @include mq(desktop) {
     padding: 200px 0;
   }
 
@@ -14,11 +14,6 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
-    @include mq(desktop) {
-      padding: 200px 0;
-      max-width: 1600px;
-    }
   }
 
   &__title {
@@ -36,14 +31,11 @@
 
     color: #ffffff;
 
-    @include mq(mobile) {
+    @include mq(not-desktop) {
       max-width: 360px;
 
       font-size: 26px;
       line-height: 1.6;
-    }
-    @include mq(desktop) {
-      max-width: 500px;
     }
   }
 
